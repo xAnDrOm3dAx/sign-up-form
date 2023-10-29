@@ -5,12 +5,61 @@
   <meta charset='UTF-8' />
   <title>Speaker Submission</title>
   <link rel='stylesheet' href='index.css' />
+  <link rel='stylesheet' href='css-reset.css' />
 </head>
 
 <body>
-  <form action="" method="get" class="speaker-form">
+  <main>
+    <section class="form-left">
+      <img src="/img/photo.avif" alt="">
+      <header class="header-left">
+        <img src="/img/odin-lined.png" alt="Odin Logo">
+        <h1>ODIN</h1>
+      </header>
 
-  </form>
+      <footer class="footer-left">
+        <p>Photo by Halie West on Unsplash</p>
+        <p>Coded by Christopher Werkmeister for The Odin Project</p>
+      </footer>
+
+    </section>
+
+    <section class="form-right">
+
+      <header class="header-right">
+        <h3>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams. Sign up now to get started.</h3>
+        <h3>You know you want to.</h3>
+      </header>
+
+      <form action="">
+        <h3>Let's do this!</h3>
+        <div class="data-row">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required>
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required>
+        </div>
+        <div class="data-row">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="joe@example.com" required>
+          <label for="phone-number">Phone Number</label>
+          <input type="numbers" name="phone-number" id="phone-number" maxlength="10">
+        </div>
+        <div class="data-row">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+          <label for="phone-number">Phone Number</label>
+          <input type="numbers" name="phone-number" id="phone-number" maxlength="10" required>
+        </div>
+        <div>
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
+        </div>
+      </form>
+
+    </section>
+  </main>
 </body>
 
 </html>
