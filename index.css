@@ -1,5 +1,78 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/Norse-Bold.otf);
+}
+
+:root {
+  --primary-text-color: #fff;
+  --secondary-text-color: #000;
+  --primary-background-color: #ffff;
+  --secondary-background-color: rgba(0, 0, 0, 0.4);
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Norse-Bold", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dotted red;
+}
+
+html {
+  background-color: black;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.form-left {
+  position: relative;
+  min-width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-left > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-left {
+  color: var(--primary-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 6rem;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  padding: 10px 0;
+}
+
+.header-left > img {
+  height: 100px;
+}
+
+.footer-left {
+  font-family: var(--primary-font-family);
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
+  width: 100%;
+}
+
+.form-right {
+  min-width: 60vw;
 }
