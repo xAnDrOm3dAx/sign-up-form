@@ -6,6 +6,7 @@
   <title>Speaker Submission</title>
   <link rel='stylesheet' href='index.css' />
   <link rel='stylesheet' href='css-reset.css' />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -25,41 +26,66 @@
     </section>
 
     <section class="form-right">
+      <div class="form-top-section">
+        <header class="header-right">
+          <h3>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.</h3>
+          <h3>You <em>know</em> you want to.</h3>
+        </header>
 
-      <header class="header-right">
-        <h3>This is not a real online service! You know you need something like this in your life to help you realize
-          your deepest dreams. Sign up now to get started.</h3>
-        <h3>You know you want to.</h3>
-      </header>
+        <form class="form-inputs" action="">
+          <h3>Let's do this!</h3>
 
-      <form action="">
-        <h3>Let's do this!</h3>
-        <div class="data-row">
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" required>
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" required>
-        </div>
-        <div class="data-row">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="joe@example.com" required>
-          <label for="phone-number">Phone Number</label>
-          <input type="numbers" name="phone-number" id="phone-number" maxlength="10">
-        </div>
-        <div class="data-row">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required>
-          <label for="phone-number">Phone Number</label>
-          <input type="numbers" name="phone-number" id="phone-number" maxlength="10" required>
-        </div>
-        <div>
-          <button type="submit">Create Account</button>
+          <div class="data-row">
+            <div class="data">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="data">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+          </div>
+
+          <div class="data-row">
+            <div class="data">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="joe@example.com" required>
+            </div>
+            <div class="data">
+              <label for="phone-number">Phone Number</label>
+              <input type="numbers" name="phone-number" id="phone-number" maxlength="10">
+            </div>
+          </div>
+
+          <div class="data-row">
+            <div class="data">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="data">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
+              <div id="placeholder"></div> <!-- Placeholder for error message -->
+            </div>
+          </div>
+      </div>
+
+      <hr class="hr-style">
+
+      <div class="form-bottom-section">
+        <button type="submit" id="submit-btn">Create Account</button>
+        <div class="login">
           <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
         </div>
+      </div>
+
       </form>
 
     </section>
   </main>
+
+
 </body>
 
 </html>
