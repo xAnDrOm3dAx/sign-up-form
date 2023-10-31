@@ -118,7 +118,7 @@ label {
 input {
   padding: 3px;
   font-size: 14px;
-  width: 300px;
+  width: 250px;
   border-radius: 5px;
   border: 1px solid #000000;
 }
@@ -129,11 +129,10 @@ input {
 
 .data-row {
   display: flex;
-  gap: 40px;
-  float: left;
+  flex-wrap: wrap;
 
   .data {
-    margin: 10px 0;
+    margin: 10px 40px 0px 10px;
   }
 
   #placeholder {
@@ -174,12 +173,10 @@ hr.hr-style {
 }
 
 .login {
-  margin-top: 20px;
+  margin: 20px 0;
   font-weight: 600;
 }
 
 a {
   color: #596d48;
 }
-
-border: 1px solid red;
