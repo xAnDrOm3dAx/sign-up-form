@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--primary-font-family);
 }
 
 html {
@@ -31,23 +32,22 @@ main {
   flex-wrap: no-wrap;
 }
 
+/* Left Side */
+
 .form-left {
   position: relative;
   max-width: 25vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.form-left > img {
-  height: 100%;
-  object-fit: cover;
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .header-left {
-  color: var(--primary-text-color);
-  font-family: var(--secondary-font-family);
-  font-size: clamp(1rem, 5.5vw, 5.5rem);
   position: absolute;
   top: 20%;
   left: 0;
@@ -56,16 +56,23 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-background-color);
-  padding: 20px 0;
-}
+  padding: 10px 0;
 
-.header-left > img {
-  max-width: 15%;
-  height: auto;
+  > h1 {
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font-family);
+    font-size: 6rem;
+    line-height: normal;
+    /* font-size: clamp(1rem, 5.5vw, 5.5rem); */
+  }
+
+  > img {
+    max-width: 20%;
+    height: auto;
+  }
 }
 
 .footer-left {
-  font-family: var(--primary-font-family);
   font-size: 0.8rem;
   text-align: center;
   position: absolute;
@@ -75,6 +82,104 @@ main {
   width: 100%;
 }
 
+/* Right Side */
+
 .form-right {
   max-width: 75vw;
+  display: flex;
+  flex-direction: column;
 }
+
+.form-top-section {
+  margin: 100px 100px 10px 50px;
+}
+
+.header-right {
+  flex: 1;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.header-right h3 + h3 {
+  margin-top: 30px;
+}
+
+/* Form */
+
+input,
+label {
+  display: block;
+}
+
+input {
+  padding: 3px;
+  font-size: 14px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.form-inputs {
+  flex: 3;
+}
+
+.data-row {
+  display: flex;
+  gap: 40px;
+  float: left;
+
+  .data {
+    margin: 10px 0;
+  }
+
+  #placeholder {
+    min-height: 30px;
+  }
+
+  /* Targeting password inputs with the "error" class */
+  .error {
+    font-size: 0.8rem; /* Apply a red border for error inputs */
+    color: red;
+    /* Any other styling for error inputs */
+  }
+}
+
+hr.hr-style {
+  height: 6px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.4);
+  margin: 10px 0 30px;
+}
+
+.form-bottom-section {
+  margin: 0 0 0 50px;
+
+  > button {
+    background-color: #596d48;
+    border-style: none;
+    padding: 15px 50px;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  > p {
+    margin: 20px 0;
+  }
+}
+
+.login {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+a {
+  color: #596d48;
+}
+
+border: 1px solid red;
