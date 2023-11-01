@@ -20,15 +20,6 @@
 }
 
 /* Layout & default styling */
-.form-left {
-  position: relative;
-  flex: 30%;
-}
-
-.form-right {
-  flex: 70%;
-}
-
 html {
   background-color: black;
 }
@@ -38,6 +29,15 @@ main {
   margin: 0 auto;
   background-color: #ffffff;
   display: flex;
+}
+
+.form-left {
+  position: relative;
+  flex: 40%;
+}
+
+.form-right {
+  flex: 70%;
 }
 
 /* Left Side */
@@ -59,16 +59,16 @@ main {
   padding: 10px 0;
 
   #odin-logo {
-    width: 20%;
-    height: 100%;
+    width: auto;
+    max-height: 80px;
   }
 
   > h1 {
     color: var(--primary-text-color);
     font-family: var(--secondary-font-family);
-    /* font-size: 6rem; */
+    font-size: 6rem;
     line-height: normal;
-    font-size: clamp(4rem, 6vw, 6rem);
+    /* font-size: clamp(4rem, 6vw, 6rem); */
   }
 }
 
@@ -93,7 +93,6 @@ main {
 }
 
 .header-right {
-  flex: 1;
   margin-bottom: 60px;
 }
 
@@ -128,16 +127,12 @@ input:focus {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
 
-.form-inputs {
-  flex: 3;
-}
-
 .data-row {
   display: flex;
   flex-wrap: wrap;
 
   .data {
-    margin: 10px 40px 0px 10px;
+    margin: 10px 40px 0px 0px;
   }
 
   #placeholder {
@@ -183,5 +178,57 @@ hr.hr-style {
 
   > p > a {
     color: #596d48;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .form-left,
+  .form-right {
+    width: 100%;
+  }
+
+  .form-top-section {
+    margin: 50px 50px 20px 50px;
+  }
+
+  .form-inputs h3 {
+    margin: 0 0 10px;
+  }
+
+  .form-bottom-section {
+    margin: 0 50px 50px 50px;
+  }
+
+  #submit-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    font-size: 1rem;
+  }
+
+  .login {
+    font-size: 0.9rem;
+    margin: 20px 50px 0 0;
+  }
+
+  .form-inputs,
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  input {
+    width: 170px;
+  }
+
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
   }
 }
