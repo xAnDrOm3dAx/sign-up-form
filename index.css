@@ -25,24 +25,20 @@ html {
 
 main {
   min-height: 100vh;
-  max-width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
   display: flex;
-  flex-wrap: no-wrap;
 }
 
 /* Left Side */
 
 .form-left {
   position: relative;
-  max-width: 25vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 30vw;
 
   > img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -80,18 +76,16 @@ main {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
   width: 100%;
+  padding: 10px;
+
+  > p > a {
+    color: #fff; /* Styles anchor elements within .footer-left */
+  }
 }
 
 /* Right Side */
-
-.form-right {
-  max-width: 75vw;
-  display: flex;
-  flex-direction: column;
-}
-
 .form-top-section {
-  margin: 100px 100px 10px 50px;
+  margin: 100px 50px 0 50px;
 }
 
 .header-right {
@@ -121,6 +115,13 @@ input {
   width: 250px;
   border-radius: 5px;
   border: 1px solid #000000;
+  margin: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #435df3;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
 
 .form-inputs {
@@ -175,8 +176,8 @@ hr.hr-style {
 .login {
   margin: 20px 0;
   font-weight: 600;
-}
 
-a {
-  color: #596d48;
+  > p > a {
+    color: #596d48;
+  }
 }
