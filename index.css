@@ -34,7 +34,7 @@ main {
 
 .form-left {
   position: relative;
-  max-width: 30vw;
+  min-width: 30vw;
 
   > img {
     height: 100%;
