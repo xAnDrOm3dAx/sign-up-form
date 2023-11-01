@@ -59,8 +59,8 @@ main {
   padding: 10px 0;
 
   #odin-logo {
-    max-width: 10%;
-    height: auto;
+    width: 20%;
+    height: 100%;
   }
 
   > h1 {
